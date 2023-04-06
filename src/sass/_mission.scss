@@ -1,0 +1,16 @@
+.mission {
+  position: relative;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5rem 0;
+  z-index: 100;
+
+  @media only screen and (max-width: $breakpoint-tab-port) {
+    width: 85%;
+    padding: 5rem 2rem;
+  }
+  @media only screen and (max-width: $breakpoint-phone) {
+    width: 100%;
+  }
+}

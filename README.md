@@ -1,5 +1,5 @@
-# Landing Page
+#Landing Page
 
-# html css sass vanilla javascript
+#html css sass vanilla javascript
 
-# preview - https://fahadhossainn.github.io/landing-page-regeneration/
+#preview - https://fahadhossainn.github.io/landing-page-regeneration/

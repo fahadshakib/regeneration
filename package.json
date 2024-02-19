@@ -1,0 +1,27 @@
+{
+  "name": "Regeneration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserslist": [
+    "last 5 versions"
+  ],
+  "scripts": {
+    "watch:sass": "sass ./src/sass/main.scss ./src/css/styles.css --watch",
+    "build:sass": "sass ./src/sass/main.scss ./src/css/styles.css",
+    "build:css": "postcss ./src/css/styles.css --output=./src/css/styles.css",
+    "build:js": "babel ./src/js/scripts.js -d ./dist/js/"
+  },
+  "author": "Fahad Hossain",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.3",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.70.0"
+  }
+}

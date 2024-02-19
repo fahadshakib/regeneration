@@ -1,0 +1,71 @@
+@keyframes animateArrow {
+    0% {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(1.5rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes animateIcon {
+    0% {
+      opacity: 0.4;
+      outline: 4.2rem solid $color-orange-light;
+    }
+    50% {
+      opacity: 0.7;
+      outline: 8.3rem solid $color-orange-light;
+    }
+    100% {
+      opacity: 0;
+      outline: none;
+    }
+  }
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(5rem);
+    }
+    50% {
+      opacity: 0.3;
+      transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  @keyframes slideFromLeft {
+    0% {
+      opacity: 0.1;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(-70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  @keyframes slideFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }

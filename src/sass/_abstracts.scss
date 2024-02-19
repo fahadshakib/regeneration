@@ -1,0 +1,55 @@
+$color-primary: #f8f1f1;
+$color-primary-dark: #aaaaaa;
+$color-secondary: #395048;
+$color-tertiary: #566d6e;
+$color-tertiary-dark: #2a3738;
+$color-orange-light: #d79f72;
+$color-orange-dark: #96775d;
+$color-grey-light: #474444;
+$color-grey-dark: #2b2929;
+
+$breakpoint-phone: 37.35em;
+$breakpoint-phone-large: 48em;
+$breakpoint-tab-port: 56.25em;
+$breakpoint-tab-land: 75em;
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-height: 9rem;
+  background-color: $color-tertiary-dark;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.text-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(1.5rem);
+}
+
+.link-active {
+  transform: scale(0.7);
+  outline: 3px solid $color-secondary;
+  outline-offset: 3px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.divider {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 3rem 0;
+  width: 10rem;
+  height: 0.21rem;
+  border-radius: 0.1rem;
+  background-color: $color-orange-light;
+}
+

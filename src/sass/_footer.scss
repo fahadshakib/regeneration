@@ -1,0 +1,116 @@
+.footer {
+  width: 100%;
+
+  & > * {
+    padding: 2rem 5rem;
+    @media only screen and (max-width: $breakpoint-phone) {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  &__top {
+    height: 10rem;
+    background-color: $color-grey-dark;
+    display: flex;
+    align-items: center;
+
+    & > * {
+      color: $color-tertiary;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 500;
+      &:not(:last-child) {
+        padding-right: 1rem;
+      }
+    }
+
+    &--link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.14rem;
+        transition: all 0.2s;
+      }
+      &:hover,
+      &:active {
+        color: $color-orange-light;
+      }
+    }
+  }
+
+  &__middle {
+    background-color: rgba($color-tertiary-dark, 0.4);
+    min-height: 18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--left {
+      max-width: 60%;
+    }
+    &--right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--text {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: $color-tertiary;
+    }
+    &--icon {
+      text-decoration: none;
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      margin: 0 0.5rem;
+      color: $color-tertiary;
+      font-size: 1.2rem;
+      outline: 0.2px solid $color-tertiary-dark;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $color-primary;
+        outline: none;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: $color-grey-dark;
+    height: 10rem;
+    border-top: 1px solid $color-grey-light;
+    display: flex;
+    align-items: center;
+    & > *:not(:last-child) {
+      padding-right: 1rem;
+    }
+    &--text {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $color-tertiary;
+    }
+    &--divider {
+      font-size: 1.2rem;
+      color: $color-primary;
+    }
+    &--link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-primary;
+        transition: all 0.2s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-orange-light;
+      }
+    }
+  }
+}

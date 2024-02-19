@@ -1,0 +1,32 @@
+.partners {
+  padding: 20rem 5rem;
+  @media only screen and (max-width: $breakpoint-tab-port) {
+    padding: 15rem 2rem;
+  }
+
+  &__header {
+    margin: 0 auto;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  &__content {
+    width: 100%;
+    padding: 5rem 0;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5rem;
+
+    @media only screen and (max-width: $breakpoint-tab-land) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: $breakpoint-phone-large) {
+      grid-template-columns: 1fr;
+      width: 60%;
+    }
+    @media only screen and (max-width: $breakpoint-phone) {
+      width: 80%;
+    }
+  }
+}

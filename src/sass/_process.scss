@@ -1,0 +1,44 @@
+.process {
+  position: relative;
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 70%;
+
+  @media only screen and (max-width:$breakpoint-tab-port) {
+    width: 90%;
+  }
+
+  &__header {
+    margin: 0 auto;
+    padding: 5rem 0;
+    width: 65%;
+    text-align: center;
+    @media only screen and (max-width:$breakpoint-tab-port) {
+      width: 100%;
+      padding: 5rem 2rem;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    border-top: 0.3px solid rgba($color-primary-dark, 0.3);
+  }
+
+  &__description {
+    padding: 2rem 0;
+    border-bottom: 0.3px solid rgba($color-primary-dark, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--count {
+      font-size: 4rem;
+      font-weight: 700;
+      color: rgba($color-primary-dark, 0.3);
+      padding: 0 3rem;
+      border-right: 0.3px solid rgba($color-primary-dark, 0.3);
+    }
+    &--text {
+      padding-left: 3rem;
+    }
+  }
+}

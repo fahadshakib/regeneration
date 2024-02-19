@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Noto Serif NP Hmong", serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 4rem;
+
+  @media only screen and (max-width: $breakpoint-tab-port) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: $color-primary;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
